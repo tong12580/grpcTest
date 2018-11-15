@@ -31,11 +31,19 @@
         </extensions>
         <plugins>
             <!--用于根据proto文件生成java类的插件-->
+            <!--详细访问以下网站文档-->
+            <!--https://www.xolstice.org/protobuf-maven-plugin/compile-mojo.html-->
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
                 <version>0.5.0</version>
                 <configuration>
+                    <!--读取proto文件地址-->
+                    <protoSourceRoot>${basedir}/src/main/resources/proto</protoSourceRoot>
+                    <!--输出编译后的java文件地址-->
+                    <outputDirectory>${basedir}/src/main/java</outputDirectory>
+                    <!--是否覆盖改文件下的其他文件-->
+                    <clearOutputDirectory>false</clearOutputDirectory>
                     <protocArtifact>com.google.protobuf:protoc:3.1.0-build2:exe:${os.detected.classifier}
                     </protocArtifact>
                     <pluginId>grpc-java</pluginId>

@@ -3,9 +3,9 @@ package yutong.grpc.study.service.impl;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
-import io.grpc.examples.helloworld.GreeterGrpc;
-import io.grpc.examples.helloworld.HelloReply;
-import io.grpc.examples.helloworld.HelloRequest;
+import yutong.grpc.build.helloworld.GreeterGrpc;
+import yutong.grpc.build.helloworld.HelloReply;
+import yutong.grpc.build.helloworld.HelloRequest;
 
 import java.util.concurrent.TimeUnit;
 
