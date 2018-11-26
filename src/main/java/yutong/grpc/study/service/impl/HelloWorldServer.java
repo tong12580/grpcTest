@@ -2,9 +2,9 @@ package yutong.grpc.study.service.impl;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import io.grpc.examples.helloworld.GreeterGrpc;
-import io.grpc.examples.helloworld.HelloReply;
-import io.grpc.examples.helloworld.HelloRequest;
+import yutong.grpc.build.helloworld.GreeterGrpc;
+import yutong.grpc.build.helloworld.HelloReply;
+import yutong.grpc.build.helloworld.HelloRequest;
 import io.grpc.stub.StreamObserver;
 
 import java.io.IOException;
